@@ -85,16 +85,38 @@ namespace CalculApp
                 case "SOMA":                                        
                     entryValor.Text = calc.Somar(this.valor1, this.valor2).ToString();
                     break;
+
                 case "SUBTRACAO":
+                    entryValor.Text = calc.Subtrair(this.valor1, this.valor2).ToString();
                     break;
+
                 case "DIVISAO":
+                    entryValor.Text = calc.Dividir(this.valor1, this.valor2).ToString();
                     break;
+
                 case "MULTIPLICACAO":
+                    entryValor.Text = calc.Multiplicar(this.valor1, this.valor2).ToString();
                     break;
+
                 default:
                     DisplayAlert("Ops...", "HOUVE UM ERRO!\n TENTE NOVAMENTE", "OK");
                     break;
             }
+        }
+
+        private void ButtonSubtrair_Clicked(object sender, EventArgs e)
+        {
+            this.valor1 = Convert.ToDouble(entryValor.Text);
+            entryValor.Text = "";
+            this.operacao = "SUBTRACAO";
+        }
+
+        private void ButtonLimpar_Clicked(object sender, EventArgs e)
+        {
+            entryValor.Text = "";
+            this.valor1 = 0;
+            this.valor2 = 0;
+            this.operacao = "";
         }
     }
 }
