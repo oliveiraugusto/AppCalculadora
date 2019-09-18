@@ -7,25 +7,25 @@
     <StackLayout>
         <Entry x:Name="entryValor"/>
         <StackLayout Orientation="Horizontal">
-            <Button Text="9" x:Name="buttonNumero9" />
-            <Button Text="8" x:Name="buttonNumero8" />
-            <Button Text="7" x:Name="buttonNumero7" />
-            <Button Text="+" x:Name="buttonIgual" />
+            <Button Text="9" x:Name="buttonNumero9" Clicked="ButtonNumero9_Clicked" />
+            <Button Text="8" x:Name="buttonNumero8" Clicked="ButtonNumero8_Clicked" />
+            <Button Text="7" x:Name="buttonNumero7" Clicked="ButtonNumero7_Clicked" />
+            <Button Text="+" x:Name="buttonSoma" />
         </StackLayout>
         <StackLayout Orientation="Horizontal">
-            <Button Text="6" x:Name="buttonNumero6" />
-            <Button Text="5" x:Name="buttonNumero5" />
-            <Button Text="4" x:Name="buttonnumero4" />
+            <Button Text="6" x:Name="buttonNumero6" Clicked="ButtonNumero6_Clicked" />
+            <Button Text="5" x:Name="buttonNumero5" Clicked="ButtonNumero5_Clicked" />
+            <Button Text="4" x:Name="buttonnumero4" Clicked="Buttonnumero4_Clicked" />
             <Button Text="-" x:Name="buttonSubtrair" />
         </StackLayout>
         <StackLayout Orientation="Horizontal">
-            <Button Text="3" x:Name="buttonNumero3" />
-            <Button Text="2" x:Name="buttonNumero2" />
-            <Button Text="1" x:Name="buttonNumero1" />
+            <Button Text="3" x:Name="buttonNumero3" Clicked="ButtonNumero3_Clicked" />
+            <Button Text="2" x:Name="buttonNumero2" Clicked="ButtonNumero2_Clicked" />
+            <Button Text="1" x:Name="buttonNumero1" Clicked="ButtonNumero1_Clicked" />
             <Button Text="/" x:Name="buttonDividir" />
         </StackLayout>
         <StackLayout Orientation="Horizontal">
-            <Button Text="0" x:Name="buttonNumero0" />
+            <Button Text="0" x:Name="buttonNumero0" Clicked="ButtonNumero0_Clicked" />
             <Button Text="CE" x:Name="buttonLimpar" />
             <Button Text="=" x:Name="buttonIgual" />
             <Button Text="*" x:Name="buttonMultiplicar" />
