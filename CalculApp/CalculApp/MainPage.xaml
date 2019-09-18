@@ -10,7 +10,7 @@
             <Button Text="9" x:Name="buttonNumero9" Clicked="ButtonNumero9_Clicked" />
             <Button Text="8" x:Name="buttonNumero8" Clicked="ButtonNumero8_Clicked" />
             <Button Text="7" x:Name="buttonNumero7" Clicked="ButtonNumero7_Clicked" />
-            <Button Text="+" x:Name="buttonSoma" />
+            <Button Text="+" x:Name="buttonSoma" Clicked="ButtonSoma_Clicked" />
         </StackLayout>
         <StackLayout Orientation="Horizontal">
             <Button Text="6" x:Name="buttonNumero6" Clicked="ButtonNumero6_Clicked" />
@@ -27,7 +27,7 @@
         <StackLayout Orientation="Horizontal">
             <Button Text="0" x:Name="buttonNumero0" Clicked="ButtonNumero0_Clicked" />
             <Button Text="CE" x:Name="buttonLimpar" />
-            <Button Text="=" x:Name="buttonIgual" />
+            <Button Text="=" x:Name="buttonIgual" Clicked="ButtonIgual_Clicked" />
             <Button Text="*" x:Name="buttonMultiplicar" />
         </StackLayout>
     </StackLayout>

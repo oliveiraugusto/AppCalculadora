@@ -9,6 +9,10 @@ namespace CalculApp
 {
     public partial class MainPage : ContentPage
     {
+        private double valor1;
+        private double valor2;
+        private string operacao;
+
         public MainPage()
         {
             InitializeComponent();
@@ -62,6 +66,35 @@ namespace CalculApp
         private void ButtonNumero9_Clicked(object sender, EventArgs e)
         {
             entryValor.Text += "9";
+        }
+
+        private void ButtonSoma_Clicked(object sender, EventArgs e)
+        {
+            this.valor1 = Convert.ToDouble(entryValor.Text);
+            entryValor.Text = "";
+            this.operacao = "SOMA";
+        }
+
+        private void ButtonIgual_Clicked(object sender, EventArgs e)
+        {
+            Calculadora calc = new Calculadora();
+            this.valor2 = Convert.ToDouble(entryValor.Text);
+
+            switch (this.operacao)
+            {
+                case "SOMA":                                        
+                    entryValor.Text = calc.Somar(this.valor1, this.valor2).ToString();
+                    break;
+                case "SUBTRACAO":
+                    break;
+                case "DIVISAO":
+                    break;
+                case "MULTIPLICACAO":
+                    break;
+                default:
+                    DisplayAlert("Ops...", "HOUVE UM ERRO!\n TENTE NOVAMENTE", "OK");
+                    break;
+            }
         }
     }
 }
