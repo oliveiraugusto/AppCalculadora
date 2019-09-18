@@ -5,10 +5,31 @@
              x:Class="CalculApp.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Entry x:Name="entryValor"/>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="9" x:Name="buttonNumero9" />
+            <Button Text="8" x:Name="buttonNumero8" />
+            <Button Text="7" x:Name="buttonNumero7" />
+            <Button Text="+" x:Name="buttonIgual" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="6" x:Name="buttonNumero6" />
+            <Button Text="5" x:Name="buttonNumero5" />
+            <Button Text="4" x:Name="buttonnumero4" />
+            <Button Text="-" x:Name="buttonSubtrair" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="3" x:Name="buttonNumero3" />
+            <Button Text="2" x:Name="buttonNumero2" />
+            <Button Text="1" x:Name="buttonNumero1" />
+            <Button Text="/" x:Name="buttonDividir" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="0" x:Name="buttonNumero0" />
+            <Button Text="CE" x:Name="buttonLimpar" />
+            <Button Text="=" x:Name="buttonIgual" />
+            <Button Text="*" x:Name="buttonMultiplicar" />
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>
